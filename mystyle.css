@@ -1,0 +1,205 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+.container{
+    background-color: #FCFD95;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.shadow{
+    display: flex;
+    border-radius: 20px;
+
+}
+.wrapper{
+    width: 550px;
+  
+    display: flex;
+    align-items: center;
+    box-shadow: -4px 9px 33px -9px rgba(0,0,0,0.65);
+    -webkit-box-shadow: -4px 9px 33px -9px rgba(0,0,0,0.65);
+    -moz-box-shadow: -4px 9px 33px -9px rgba(0,0,0,0.65);
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 600px;
+    background-position: center;
+    background-image: url('tram2.jpg');
+ 
+}
+.wrapperRight{
+    width: 550px;
+    display: flex;
+    background-color: white;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    background-position: center;
+    position: relative;   
+}
+.about{
+    width: 80%;
+    margin: auto;
+}
+.imgWrap{
+    box-shadow: -4px 9px 33px -9px rgba(0,0,0,0.65);
+    -webkit-box-shadow: -4px 9px 33px -9px rgba(0,0,0,0.65);
+    -moz-box-shadow: -4px 9px 33px -9px rgba(0,0,0,0.65);
+    position: absolute;
+    width: 300px;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0);
+    padding: 5px;
+}
+.imgWrap:first-child{
+    top:60px;
+    left: 20px;
+    transform: rotate(-10deg);
+}
+.imgWrap:last-child{
+    top:40px;
+    right: 10px;
+    transform: rotate(10deg);
+}
+.imgWrap img{
+    height: 100%;
+    width: 100%;
+}
+.cornerCut{
+    position: relative;
+    width: 450px;
+    -webkit-box-shadow: 0 5px 24px 5px rgba(0,0,0,0.21); 
+    box-shadow: 5px 5px 24px 5px rgba(0,0,0,0.21);
+    height: 100px;
+}
+
+.cornerCut::after{
+   content: '';
+    border-top: 100px solid transparent;
+    border-right: 450px solid white;
+
+    position: absolute;
+    top:0;
+    z-index: 1;
+    left: 0;
+}
+.cornerCut::before{
+    content: '';
+     border-top: 100px solid transparent;
+    transform: rotate(180deg);
+     /* border-right: 450px solid rgba(230, 221, 221, 0.5); */
+     position: absolute;
+     top:0;
+     right: 0;
+ }
+ .topWrap{
+     position: relative
+     ;
+ }
+.avatar{
+     width:140px;
+     border-radius: 50%;
+     top: 10px;
+     left: 20px;
+     z-index: 10;
+     overflow: hidden;
+     height: 140px;
+     display: flex;
+     position: absolute;
+     align-items: center;
+ }
+ .avatar img{
+     width: 100%;
+ }
+.name
+{
+    position: absolute;
+    right: 50px;
+    z-index: 1;
+    background-color: transparent;
+}
+.name p{
+    letter-spacing: 1px;
+}
+.job{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+.job p {
+    margin-left: 10px;
+    font-size: 10px;
+}
+.profileContainer{
+    margin-bottom: 20px;
+    padding-top: 100px;
+    width: 450px; 
+    box-shadow: -4px 9px 33px -9px rgba(0,0,0,0.65);
+-webkit-box-shadow: -4px 9px 33px -9px rgba(0,0,0,0.65);
+-moz-box-shadow: -4px 9px 33px -9px rgba(0,0,0,0.65);
+  
+    height: 400px;
+    position: relative;
+    background-color: white;
+}
+
+.buttonBox{
+    width: 90%;
+    margin:auto;
+    background-color: #000;
+    display: flex;
+    border-radius: 15px;
+
+    align-items: center;
+    box-shadow: -4px 9px 10px -9px rgba(0,0,0,0.5);
+-webkit-box-shadow: -4px 9px 15px -9px rgba(0,0,0,0.5);
+-moz-box-shadow: -4px 9px 10px -9px rgba(0,0,0,0.5);
+    
+    justify-content: center;
+}
+.buttonBox button{
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    height: 70px;
+    outline: none;
+    
+}
+.buttonBox button:first-child{
+    background-color: white;
+}
+.buttonBox button i{
+    margin-right: 10px;
+}
+.profile{
+    margin: 40px 40px;
+}
+.paragraphs{
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+}
+.paragraphs i{
+    margin-right: 10px;
+}
+.paragraphs p{
+    letter-spacing: 1px;
+    font-size: 12px;
+}
+.paragraphs img{
+    width: 15px;
+    margin-left: -2px;
+    margin-right: 10px;
+}
+.signature img{
+    margin-bottom: 40px;
+    width: 300px;
+}
